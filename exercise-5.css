@@ -1,0 +1,69 @@
+.body {
+    margin: 0px;
+}
+
+.cartbutton {
+    float: right;
+    width: 50px;
+    height: 50px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.clearboth {
+    clear: both;
+}
+
+.centered {
+    text-align: center;
+}
+
+.novertical {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.horizontal {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pictures {
+    float: left;
+    width: 30%;
+}
+
+.largeimg {
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.smallimg {
+    width: 32%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.textpanel {
+    width: 50%;
+}
+
+.availabilitypanel {
+    width: 15%;
+}
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
