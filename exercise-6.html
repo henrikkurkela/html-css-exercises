@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
+  <style>
+    .header {
+      width: 100%;
+      height: 200px;
+      background-color: #A8DBFF;
+      margin-bottom: 40px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Public Sans', sans-serif;
+    }
+
+    .header {
+      position: relative;
+    }
+
+    .menu {
+      background-color: #528AB3;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      font-size: 24px;
+      flex: auto;
+      flex-direction: row;
+    }
+
+    .menuitem {
+      background-color: #528AB3;
+      font-size: 20px;
+      float: left;
+      box-sizing: border-box;
+      width: 20%;
+      height: 50px;
+      color: white;
+    }
+
+    .active {
+      background-color: white;
+      color: black;
+    }
+
+    .clearboth {
+      clear: both;
+    }
+
+    .employeelist {
+      background-color: gray;
+      max-width: 500px;
+      flex: auto;
+      flex-direction: column;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+    }
+
+    .employeeitem {
+      border-style: solid;
+      border-width: 1px;
+      border-color: black;
+      background-color: white;
+      box-sizing: border-box;
+      height: 140px;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    .employeeimage {
+      border-style: solid;
+      border-width: 1px;
+      border-color: black;
+      float: left;
+      width: 120px;
+      height: 120px;
+      margin-right: 10px;
+      border-radius: 100%;
+      background-image: url("exercise-6-employee.png");
+      background-size: contain;
+    }
+
+    .employeedetails {
+      position: relative;
+      top: 50%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+    }
+
+    .nomargins {
+      margin: 0;
+    }
+
+    .justified {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    .centered {
+      width: fit-content;
+      height: fit-content;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="menu">
+      <div class="menuitem">
+        <div class="centered">Home</div>
+      </div>
+      <div class="menuitem active">
+        <div class="centered">Products</div>
+      </div>
+      <div class="menuitem">
+        <div class="centered">Pricing</div>
+      </div>
+      <div class="menuitem">
+        <div class="centered">Documentation</div>
+      </div>
+      <div class="menuitem">
+        <div class="centered">API</div>
+      </div>
+    </div>
+  </div>
+  <div class="clearboth"></div>
+  <div class="justified">
+    <h1>Flexbox exercise 1</h1>
+    Your task is to use flexbox to modify the navigation bar above to look like in the image below:
+    <br>
+    <img src="exercise-6.PNG" style="width: 75%; border: 1px solid black;">
+    <h1>Flexbox exercise 2</h1>
+    <div class="employeelist">
+      <div class="employeeitem">
+        <div class="employeeimage"></div>
+        <div class="employeedetails">
+          <h2 class="nomargins">John Doe</h2>
+          <p class="nomargins">Master of Disaster</p>
+        </div>
+      </div>
+
+      <div class="employeeitem">
+        <div class="employeeimage"></div>
+        <div class="employeedetails">
+          <h2 class="nomargins">Don Joe</h2>
+          <p class="nomargins">Apprentice of Disaster</p>
+        </div>
+      </div>
+
+      <div class="employeeitem">
+        <div class="employeeimage"></div>
+        <div class="employeedetails">
+          <h2 class="nomargins">Tom Turner</h2>
+          <p class="nomargins">Likes to turn</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
