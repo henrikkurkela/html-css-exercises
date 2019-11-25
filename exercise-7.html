@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise 7</title>
+    <link rel="stylesheet" href="exercise-7.css">
+</head>
+<body>
+    <div class="button" onclick="onClick()">
+        Demo button
+    </div>
+    <div id="mybox" class="box"></div>
+</body>
+
+<script>
+    function onClick(){
+        let element = document.getElementById("mybox");
+        if (element.className.includes("endbox")) {
+            element.className = "box";
+        } else {
+            element.className += " endbox";
+        }
+    }
+</script>
+</html>

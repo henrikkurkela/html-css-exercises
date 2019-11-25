@@ -1,0 +1,31 @@
+.button {
+    background-color: goldenrod;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 24px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: inline-block;
+    transition-duration: 100ms;
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+}
+
+.button:hover {
+    background-color: gold;
+    cursor: pointer;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    transition-duration: 250ms;
+    transition-property: margin-left;
+    transition-timing-function: ease-in-out;
+}
+
+.endbox {
+    margin-left: 300px;
+}
