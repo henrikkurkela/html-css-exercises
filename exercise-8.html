@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="exercise-8.css">
+    <title>Image Gallery</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="picture" onclick="bigphoto('exercise-8.png')">
+            <img src="exercise-8.png">
+        </div>
+        <div class="picture" onclick="bigphoto('exercise-8-1.png')">
+            <img src="exercise-8-1.png">
+        </div>
+        <div class="picture" onclick="bigphoto('exercise-8-2.png')">
+            <img src="exercise-8-2.png">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="picture" onclick="bigphoto('exercise-8-1.png')">
+            <img src="exercise-8-1.png">
+        </div>
+        <div class="picture" onclick="bigphoto('exercise-8-2.png')">
+            <img src="exercise-8-2.png">
+        </div>
+        <div class="picture" onclick="bigphoto('exercise-8.png')">
+            <img src="exercise-8.png">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="picture" onclick="bigphoto('exercise-8.png')">
+            <img src="exercise-8.png">
+        </div>
+        <div class="picture" onclick="bigphoto('exercise-8-1.png')">
+            <img src="exercise-8-1.png">
+        </div>
+        <div class="picture" onclick="bigphoto('exercise-8-2.png')">
+            <img src="exercise-8-2.png">
+        </div>
+    </div>
+
+    <div id="photodiv" class="bigpicture">
+        <img id="maximizedimg" style="margin-bottom:0px" src="exercise-8.png">
+        <button class="btn" id="closebutton" onclick="closebigphoto()">Close</button>
+    </div>
+</body>
+
+<script>
+    function bigphoto(callingElement){
+        let element = document.getElementById("photodiv");
+        document.getElementById("maximizedimg").src = callingElement;
+        element.className = "maximized";
+        let buttonelement = document.getElementById("closebutton");
+        buttonelement.style.visibility = "visible";
+    }
+    function closebigphoto(){
+        let element = document.getElementById("photodiv");
+        element.className = "bigpicture";
+        let buttonelement = document.getElementById("closebutton");
+        buttonelement.style.visibility = "hidden";
+    }
+</script>
+
+</html>
