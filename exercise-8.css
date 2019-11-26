@@ -12,7 +12,7 @@
 .bigpicture {
     width: fit-content;
     height: auto;
-    position: absolute;
+    position: fixed;
     top: 5%;
     left: -100%;
     transition-duration: 100ms;

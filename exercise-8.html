@@ -11,37 +11,37 @@
 
 <body>
     <div class="row">
-        <div class="picture" onclick="bigphoto('exercise-8.png')">
+        <div class="picture" onclick="bigphoto(this)">
             <img src="exercise-8.png">
         </div>
-        <div class="picture" onclick="bigphoto('exercise-8-1.png')">
+        <div class="picture" onclick="bigphoto(this)">
             <img src="exercise-8-1.png">
         </div>
-        <div class="picture" onclick="bigphoto('exercise-8-2.png')">
+        <div class="picture" onclick="bigphoto(this)">
             <img src="exercise-8-2.png">
         </div>
     </div>
 
     <div class="row">
-        <div class="picture" onclick="bigphoto('exercise-8-1.png')">
+        <div class="picture" onclick="bigphoto(this)">
             <img src="exercise-8-1.png">
         </div>
-        <div class="picture" onclick="bigphoto('exercise-8-2.png')">
+        <div class="picture" onclick="bigphoto(this)">
             <img src="exercise-8-2.png">
         </div>
-        <div class="picture" onclick="bigphoto('exercise-8.png')">
+        <div class="picture" onclick="bigphoto(this)">
             <img src="exercise-8.png">
         </div>
     </div>
 
     <div class="row">
-        <div class="picture" onclick="bigphoto('exercise-8.png')">
+        <div class="picture" onclick="bigphoto(this)">
             <img src="exercise-8.png">
         </div>
-        <div class="picture" onclick="bigphoto('exercise-8-1.png')">
+        <div class="picture" onclick="bigphoto(this)">
             <img src="exercise-8-1.png">
         </div>
-        <div class="picture" onclick="bigphoto('exercise-8-2.png')">
+        <div class="picture" onclick="bigphoto(this)">
             <img src="exercise-8-2.png">
         </div>
     </div>
@@ -55,16 +55,14 @@
 <script>
     function bigphoto(callingElement){
         let element = document.getElementById("photodiv");
-        document.getElementById("maximizedimg").src = callingElement;
+        element.children[0].src = callingElement.children[0].src;
         element.className = "maximized";
-        let buttonelement = document.getElementById("closebutton");
-        buttonelement.style.visibility = "visible";
+        element.children[1].style.visibility = "visible";
     }
     function closebigphoto(){
         let element = document.getElementById("photodiv");
         element.className = "bigpicture";
-        let buttonelement = document.getElementById("closebutton");
-        buttonelement.style.visibility = "hidden";
+        element.children[1].style.visibility = "hidden";
     }
 </script>
 
